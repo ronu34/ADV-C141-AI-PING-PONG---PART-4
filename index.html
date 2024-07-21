@@ -1,0 +1,50 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=2048x2048&w=is&k=20&c=-dkoxqirWcLDhkIjVgkLfRXdNHqCJdPKswM7tkjTcN0=">
+        <center>
+            <h1>Ping Pong Game</h1>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#gameInstructionsModal">How to Play</button>
+            <button class="btn btn-success" onclick="startGame()">Play</button>
+            <button class="btn btn-danger" onclick="restart()">Restart</button>
+            <h2 id="gameStatus" class="text-center"></h2>
+            <div id="gameCanvas"></div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="gameInstructionsModal" tabindex="-1" role="dialog" aria-labelledby="gameInstructionsModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="gameInstructionsModalLabel">Instructions</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Add game instructions here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sticky Footer -->
+            <div class="footer text-center">
+                Created by Ronu Enderman
+            </div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
